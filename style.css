@@ -1,0 +1,116 @@
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #121212;
+    color: #f0f0f0;
+    line-height: 1.6;
+  }
+  a {
+    color: #ff6600;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  header {
+    background: #1f1f1f;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #ff6600;
+  }
+  header h1 {
+    font-size: 2.8rem;
+    letter-spacing: 2px;
+  }
+  nav {
+    margin-top: 10px;
+  }
+  nav a {
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  section {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  h2 {
+    color: #ff6600;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ff6600;
+    padding-bottom: 5px;
+  }
+  /* Banner */
+  .banner {
+    background: url('https://cdn.wallpapersafari.com/74/29/QsPZKL.jpg') center/cover no-repeat;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ff6600;
+    font-size: 3rem;
+    font-weight: 900;
+    text-shadow: 0 0 10px #000;
+  }
+  /* Grid for Guides and News */
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  /* Cards */
+  .card {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ff6600aa;
+  }
+  /* Videos */
+  .videos iframe {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+  }
+  /* Teams list */
+  .teams-list {
+    list-style: none;
+  }
+  .teams-list li {
+    background: #222;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px #ff6600aa;
+  }
+  /* About */
+  .about p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 1.1rem;
+  }
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #1f1f1f;
+    border-top: 3px solid #ff6600;
+    margin-top: 50px;
+    font-size: 0.9rem;
+    color: #bbb;
+  }
+  /* Responsive */
+   @media (max-width: 768px) {
+    .grid-2 {
+      grid-template-columns: 1fr;
+    }
+    header h1 {
+      font-size: 2rem;
+    }
+    .banner {
+      font-size: 2rem;
+      height: 200px;
+    }
+     }
